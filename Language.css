@@ -1,0 +1,78 @@
+/* Language Selector Styles */
+.language-selector {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-family: 'Playfair Display', serif;
+  z-index: 15;
+  user-select: none;
+}
+
+.language-selector button {
+  background: rgba(255, 215, 0, 0.8);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #000;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.9);
+  transition: background 0.3s ease;
+  letter-spacing: 1.5px;
+  min-width: 120px;
+  text-align: left;
+}
+
+.language-selector button:hover,
+.language-selector button:focus {
+  background: #ffd700;
+  outline: none;
+}
+
+.language-selector ul {
+  margin: 8px 0 0 0;
+  padding: 0;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+  max-width: 160px;
+  overflow: hidden;
+  transform-origin: top;
+  animation: dropdownFade 0.3s ease forwards;
+  position: absolute;
+  right: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.language-selector ul[hidden] {
+  display: none;
+}
+
+.language-selector li {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.language-selector li[aria-selected="true"],
+.language-selector li:hover,
+.language-selector li:focus {
+  background: #ffd700;
+  color: #000;
+  outline: none;
+}
+
+/* Dropdown fade animation */
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: scaleY(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
