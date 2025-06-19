@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EVOL Web Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>🔒 EVOL Case Registration</h1>
+    <div id="register-section">
+      <p id="status"></p>
+      <input type="text" id="serialInput" placeholder="Enter EVOL serial code">
+      <button onclick="verifyCode()">Register</button>
+    </div>
+    <div id="welcome-section" style="display:none;">
+      <h2>✅ Registered Successfully!</h2>
+      <p>Thank you for activating your EVOL case.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
