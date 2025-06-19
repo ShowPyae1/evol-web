@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8ff;
+  font-family: Roboto, sans-serif;
+  background-color: #e6e6fa;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@ body {
 
 #app {
   text-align: center;
-  background: white;
+  background: Light blue;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
@@ -36,5 +36,5 @@ button {
 }
 
 button:hover {
-  background-color: #3730a3;
+  background-color: #a8d5ba;
 }
